@@ -7,6 +7,7 @@ import { Card } from './card';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
+  @Input() card: Card | undefined;
   @Input() attackPower : number = 0;
 
   constructor() {}

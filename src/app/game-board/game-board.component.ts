@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Card } from '../card/card';
 
 @Component({
   selector: 'app-game-board',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./game-board.component.sass']
 })
 export class GameBoardComponent implements OnInit {
-  @Input() cards : number[] = [0,0,0];
+  @Input() cards : Card[] = [new Card(4, 'hello', 'type')];
 
   constructor() { }
 
