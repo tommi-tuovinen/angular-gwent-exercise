@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-deck',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deck.component.sass']
 })
 export class DeckComponent implements OnInit {
-
+  @Input() cards : number[] = [0,0,0,0,0,0,0];
   constructor() { }
 
   ngOnInit(): void {

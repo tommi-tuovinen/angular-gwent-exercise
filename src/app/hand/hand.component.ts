@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hand',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HandComponent implements OnInit {
   handlimit : number = 10;
+  @Input() cards : number[] = [0,0,0,0,0,0];
 
   constructor() { }
 

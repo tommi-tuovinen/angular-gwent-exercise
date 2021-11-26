@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Card } from './card';
 
 @Component({
   selector: 'app-card',
@@ -6,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.sass']
 })
 export class CardComponent implements OnInit {
-  attackPower: number = 0;
+  @Input() attackPower : number = 0;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    this.attackPower = Math.ceil(Math.random() * 10)
+    this.attackPower = Math.ceil(Math.random() * 10);
   }
 
 }
