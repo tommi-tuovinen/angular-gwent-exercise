@@ -21,6 +21,7 @@ export class PlayerComponent implements OnInit {
   }
 
   playCard(card: Card) {
+    this.handCards = this.handCards.filter(c => c !== card);
     this.tableCards.push(card);
   }
 }

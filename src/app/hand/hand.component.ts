@@ -18,7 +18,6 @@ export class HandComponent implements OnInit {
   }
 
   playCard(card: Card): void {
-    this.cards = this.cards.filter(c => c !== card);
     this.playCardEvent.emit(card);
   }
 }
