@@ -8,6 +8,7 @@ import { Card } from '../card/card';
 })
 export class GameBoardComponent implements OnInit {
   @Input() cards : Card[] = [];
+  @Input() attackPower : number = 0;
 
   constructor() { }
 

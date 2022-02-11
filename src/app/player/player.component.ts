@@ -10,6 +10,7 @@ export class PlayerComponent implements OnInit {
 
   handCards: Card[] = [];
   tableCards: Card[] = [];
+  attackPower: number = 0;
 
   constructor() { }
 
@@ -23,5 +24,6 @@ export class PlayerComponent implements OnInit {
   playCard(card: Card) {
     this.handCards = this.handCards.filter(c => c !== card);
     this.tableCards.push(card);
+    this.attackPower = this.tableCards.map(c => c.attackPower).reduce((a, b) => a + b, 0);
   }
 }
