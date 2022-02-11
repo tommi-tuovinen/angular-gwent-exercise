@@ -1,0 +1,3 @@
+<app-deck (drawCardEvent)="drawCard($event)"></app-deck>
+<app-hand [cards]="handCards" (playCardEvent)="playCard($event)"></app-hand>
+<app-game-board [cards]="tableCards"></app-game-board>

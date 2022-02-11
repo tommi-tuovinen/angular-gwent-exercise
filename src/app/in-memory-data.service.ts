@@ -11,6 +11,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { name: 'Geralt', attackPower: 13, type: '' },
       { name: 'Ciri', attackPower: 10, type: '' },
       { name: 'Yennefer', attackPower: 14, type: '' },
+      { name: 'Dandelion', attackPower: 3, type: '' },
     ];
     return {cards};
   }

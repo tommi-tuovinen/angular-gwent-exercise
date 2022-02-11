@@ -11,6 +11,7 @@ import { CardComponent } from './card/card.component';
 import { GameBoardComponent } from './game-board/game-board.component';
 import { HandComponent } from './hand/hand.component';
 import { DeckComponent } from './deck/deck.component';
+import { PlayerComponent } from './player/player.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DeckComponent } from './deck/deck.component';
     CardComponent,
     GameBoardComponent,
     HandComponent,
-    DeckComponent
+    DeckComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
