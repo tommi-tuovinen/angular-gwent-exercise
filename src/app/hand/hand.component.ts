@@ -8,7 +8,7 @@ import { Card } from '../card/card';
 })
 export class HandComponent implements OnInit {
   handlimit : number = 10;
-  @Input() cards : Card[] = [new Card(3, 'hello', 'type')];
+  @Input() cards : Card[] = [];
 
   constructor() { }
 

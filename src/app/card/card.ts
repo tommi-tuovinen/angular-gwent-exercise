@@ -1,7 +1,5 @@
-export class Card {
-  constructor(
-    public attackPower: number,
-    public name: string,
-    private type: string
-  ) {}
+export interface Card {
+  attackPower: number;
+  name: string;
+  type: string;
 }

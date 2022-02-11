@@ -7,7 +7,7 @@ import { Card } from '../card/card';
   styleUrls: ['./game-board.component.sass']
 })
 export class GameBoardComponent implements OnInit {
-  @Input() cards : Card[] = [new Card(4, 'hello', 'type')];
+  @Input() cards : Card[] = [];
 
   constructor() { }
 

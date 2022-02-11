@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardService } from '../card.service';
 import { Card } from '../card/card';
 
 @Component({
@@ -7,10 +8,16 @@ import { Card } from '../card/card';
   styleUrls: ['./deck.component.sass']
 })
 export class DeckComponent implements OnInit {
-  @Input() cards : Card[] = [new Card(1, 'hello', 'type'), new Card(2, 'hello', 'type'), new Card(3, 'hello', 'type')];
-  constructor() { }
+  cards: Card[] = []
+
+  constructor(private cardService: CardService) { }
 
   ngOnInit(): void {
+    this.getCards();
   }
 
+  getCards(): void {
+    this.cardService.getCards()
+      .subscribe(cards => this.cards = cards);
+  }
 }
