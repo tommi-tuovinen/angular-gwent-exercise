@@ -1,3 +1,9 @@
-<app-deck (drawCardEvent)="drawCard($event)"></app-deck>
-<app-hand [cards]="handCards" (playCardEvent)="playCard($event)"></app-hand>
-<app-game-board [cards]="tableCards"></app-game-board>
+<div class="card-area">
+  <app-deck (drawCardEvent)="drawCard($event)"></app-deck>
+</div>
+<div class="card-area">
+  <app-hand [cards]="handCards" (playCardEvent)="playCard($event)"></app-hand>
+</div>
+<div class="card-area">
+  <app-game-board [cards]="tableCards"></app-game-board>
+</div>
